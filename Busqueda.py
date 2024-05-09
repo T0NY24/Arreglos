@@ -18,7 +18,7 @@ if opcion == "1":
     numero_champions = input("Ingrese el número de Champions ganadas: ")
     if numero_champions.isdigit():
         numero_champions = int(numero_champions)
-        equipos_filtrados = [equipo for equipo, champions in equipos_con_mas_champions if champions == numero_champions]
+        equipos_filtrados = [equipo for equipo, champions in Equipos_con_mas_champions if champions == numero_champions]
         if equipos_filtrados:
             print(f"Equipos que han ganado {numero_champions} Champions League:")
             for equipo in equipos_filtrados:
